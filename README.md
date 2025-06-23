@@ -21,3 +21,9 @@ Attached is output from logcat with worker failing.
 6. If no error occur, repeat from step 3.
 
 Optionally to reset the worker queue, Tap "Cancel all workers" button (work is enqueued with `enqueueUniqueWork` with `ExistingWorkPolicy.APPEND_OR_REPLACE` on single workId)
+
+## Screenshots
+
+![Log Output](docs/log-output.png)
+
+![addCallback breakpoint](docs/addCallback-breakpoint.png)
