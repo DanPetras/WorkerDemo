@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.workerdemo'
+    compileSdk 36
+    buildToolsVersion = '36.0.0'
+    defaultConfig {
+        applicationId "com.example.workerdemo"
+        minSdk 30
+        targetSdk 35
+        versionCode 203
+        versionName "1.0"
+        base {
+            archivesName = "worker-demo-$versionName-$versionCode"
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.work:work-runtime:2.10.2'
+}
